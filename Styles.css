@@ -1,13 +1,54 @@
-﻿body {
-    margin: 0 20px 0 20px;
+body {
     background-color: #15173f;
-
+    margin: 0 0 0 0;
+    -ms-scrollbar-base-color: #E28F19;
+    -ms-scrollbar-arrow-color: #E28F19;
+    -ms-scrollbar-track-color: hotpink;
 }
+
+h1, p, h2 {
+    color: floralwhite;
+}
+
+#banner {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #503391;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: grid;
+    position: center;
+    width: 100%;
+    
+    }
 
 #Welcoming {
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-align: left;
-    margin: 0 0 0 1rem;
-    color: floralwhite;
+    margin: 0 0 0 3rem;
+    margin-bottom: 200px;
+    padding-top: 15em;
     font-size: 40px;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-name: animate__fadeInLeft;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: 80%;
+}
+
+@keyframes animate__fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}  
+
+#preguntas {
+    padding-top: 200px;
 }
